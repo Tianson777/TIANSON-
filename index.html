@@ -1,116 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Game Character</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            padding: 30px;
-        }
-
-        .container {
-            max-width: 500px;
-            margin: auto;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        label {
-            font-weight: bold;
-        }
-
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 6px 0 15px;
-            box-sizing: border-box;
-        }
-
-        button {
-            padding: 10px 15px;
-            margin: 5px;
-            cursor: pointer;
-        }
-
-        #output {
-            margin-top: 20px;
-            padding: 15px;
-            background-color: #eeeeee;
-            border-radius: 5px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Philip S. Tianson | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<div class="container">
+    <section id="home" class="section">
+        <div class="container hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span>John Philip S. Tianson</span></h1>
+                <p>I am a BS Information Technology Student. I study about basic programming and learning how to create websites, applications, and more.</p>
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+            <div class="hero-image">
+                <div class="img-placeholder">
+                    <img src = "images /ab.png" alt="My Photo">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h1>Game Character</h1>
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                I am a BS Information Technology Student who strives and seeks knowledge for better understanding what programming is all about and dreams of one day being able to contribute to society using my skills that I learned about programming.
+            </p>
+        </div>
+    </section>
 
-    <label>Enter hero name:</label>
-    <input type="text" id="name">
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>HTML</h3>
+                    <p>Building the structures of a website</p>
+                </div>
+                <div class="skill-card">
+                    <h3>CSS</h3>
+                    <p>Designing modern websites</p>
+                </div>
+                <div class="skill-card">
+                    <h3>C++</h3>
+                    <p>Developing programs and practicing algorithms</p>
+                </div>
+                <div class="skill-card">
+                    <h3>C#</h3>
+                    <p>Building applications, Practicing oriented-algorithms</p>
+                </div>
+                <div class="skill-card">
+                    <h3>MySQL</h3>
+                    <p>Working databases and data management</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <label>Enter hero role:</label>
-    <input type="text" id="role">
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="img-placeholder small">
+                                            <img src = "images /b.jpeg" alt="My Photo">
+                    </div>
+                    <p>Project 1</p>
+                </div>
+                <div class="project-card">
+                    <div class="img-placeholder small">
+                    <img src = "images /c.jpeg" alt="My Photo">
+                    </div>
+                    <p>Project 2</p>
+                </div>
+                <div class="project-card">
+                    <div class="img-placeholder small">
+                        <img src = "images /d.jpeg" alt="My Photo">
+                    </div>
+                    <p>Project 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <label>Enter hero level:</label>
-    <input type="number" id="level">
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">My Experience</h2>
+            <div class="experience-item">
+                <h3>2025 - Present</h3>
+                <h4>BS Information Technology</h4>
+                <p>Learning Developing programs, databases, web development. Information Technology provides different activities and projects to enhance my understanding and skills further.</p>
+            </div>
+            <div class="experience-item">
+                <h4>Programming I and II Projects</h4>
+                <p>Created programming Projects using C++, C# and MySQL. These Projects helped my understanding of programming and served as a foundation for learning Information Technology.</p>
+            </div>
+        </div>
+    </section>
 
-    <label>Enter hero HP:</label>
-    <input type="number" id="hp">
+    <section id="contacts" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Contacts</h2>
+            <p class="contact-subtitle">Please use the links below for contacting us and further assistance</p>
+            <div class="contact-links">
+                <a href="mailto:yourgmail@gmail.com" class="contact-link">Gmail</a>
+                <a href="tel:+1234567890" class="contact-link">Contact Number</a>
+                <a href="https://m.me/yourusername" class="contact-link">Messenger</a>
+            </div>
+        </div>
+    </section>
 
-    <label>Enter hero Mana:</label>
-    <input type="number" id="mana">
-
-    <button onclick="displayInformation()">
-        Display Information
-    </button>
-
-    <button onclick="useSkill()">
-        Use Skill
-    </button>
-
-    <div id="output"></div>
-
-</div>
-
-<script>
-
-function displayInformation() {
-
-    let name = document.getElementById("name").value;
-    let role = document.getElementById("role").value;
-    let level = document.getElementById("level").value;
-    let hp = document.getElementById("hp").value;
-    let mana = document.getElementById("mana").value;
-
-    document.getElementById("output").innerHTML =
-        "<h2>--- Game Character Information ---</h2>" +
-        "<p>Name: " + name + "</p>" +
-        "<p>Role: " + role + "</p>" +
-        "<p>Level: " + level + "</p>" +
-        "<p>HP: " + hp + "</p>" +
-        "<p>Mana: " + mana + "</p>";
-}
-
-function useSkill() {
-
-    let name = document.getElementById("name").value;
-
-    document.getElementById("output").innerHTML =
-        "<p>" + name + " uses a special skill!</p>" +
-        "<p>" + name +
-        " attacks the enemy using their ability.</p>";
-}
-
-</script>
-
+    <footer>
+        <p>&copy; 2024 John Philip S. Tianson | BSIT Student</p>
+    </footer>
 </body>
 </html>
